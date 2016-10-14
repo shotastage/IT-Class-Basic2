@@ -1,7 +1,5 @@
 
 
-/* Gloval variables */
-
 var totalVal = 0;   // 計算中のトータルの値
 var inputNumVal = "0";  // 数字のボタンの値(文字列扱い)
 var beforeVal = ""; // 1つ前にクリックされたボタンの値(文字列扱い)
@@ -72,11 +70,10 @@ function clickBtn(btnVal) {
             operator = beforeVal;
           } else {
             var calc = totalVal + operator + inputNumVal;
-            console.log("eval" + calc);
             totalVal = eval(totalVal + operator + inputNumVal);
           }
         }
-        console.log(totalVal);
+
         document.getElementById("output").innerText = totalVal;
       }
 
@@ -86,7 +83,6 @@ function clickBtn(btnVal) {
   }
 
   /* 演算子の記号が表示されるdiv要素部分 に 記号ボタン の値を代入 */
-  console.log(btnVal);
   if (operator == "*") {
     document.getElementById("type").innerText = "×";
   } else {
