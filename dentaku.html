@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>電卓を作ろう！</title>
+        <script src="dentaku.js"></script>
+    </head>
+
+    <body>
+        <table border="1">
+            <tr>
+                <th colspan="3" align="right"><div id="output">0</div></th>
+                <th><div id="type"></div></th>
+            </tr>
+            <tr>
+                <th colspan="4"><input type="button" value="c" onclick="clearAll();" style="width:100%;"></th>
+            </tr>
+            <tr>
+                <td><input type="button" value="7" onclick="clickBtn(7);"></td>
+                <td><input type="button" value="8" onclick="clickBtn(8);"></td>
+                <td><input type="button" value="9" onclick="clickBtn(9);"></td>
+                <td><input type="button" value="/" onclick="clickBtn('/');"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" onclick="clickBtn(4);"></td>
+                <td><input type="button" value="5" onclick="clickBtn(5);"></td>
+                <td><input type="button" value="6" onclick="clickBtn(6);"></td>
+                <td><input type="button" value="×" onclick="clickBtn('*');"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" onclick="clickBtn(1);"></td>
+                <td><input type="button" value="2" onclick="clickBtn(2);"></td>
+                <td><input type="button" value="3" onclick="clickBtn(3);"></td>
+                <td><input type="button" value="-" onclick="clickBtn('-');"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="0" onclick="clickBtn(0);"></td>
+                <td></td>
+                <td><input type="button" value="=" onclick="clickBtn('=');"></td>
+                <td><input type="button" value="+" onclick="clickBtn('+');"></td>
+            </tr>
+        </table>
+    </body>
+</html>
