@@ -32,7 +32,7 @@ function clickBtn(btnVal) {
           if (inputNumVal == "0") {
             inputNumVal = btnVal;
           } else {
-            inputNumVal += btnVal;
+            inputNumVal = "" + btnVal + btnVal;
           }
 
         } else {
@@ -40,7 +40,6 @@ function clickBtn(btnVal) {
         }
 
         /* 計算結果が表示されるdiv要素部分 に 数字のボタンの値(引数)を出力 */
-        console.log(inputNumVal);
         document.getElementById("output").innerText = inputNumVal;
 
     // --- クリックしたボタンの値が記号(文字列)だった場合 ---
