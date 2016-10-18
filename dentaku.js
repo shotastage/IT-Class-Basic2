@@ -69,7 +69,6 @@ function clickBtn(btnVal) {
           if (operator == "=") {
             operator = beforeVal;
           } else {
-            var calc = totalVal + operator + inputNumVal;
             totalVal = eval(totalVal + operator + inputNumVal);
           }
         }
