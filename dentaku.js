@@ -83,6 +83,8 @@ function clickBtn(btnVal) {
   }
 
   /* 演算子の記号が表示されるdiv要素部分 に 記号ボタン の値を代入 */
+    
+  /* 演算子が*だった場合、表示する記号を×に変更 */
   if (operator == "*") {
     document.getElementById("type").innerText = "×";
   } else {
@@ -104,6 +106,8 @@ if (operator == "=") {
 
 
 function clearAll() {
+    
+  /* 変数を初期値に戻して表示を初期化 */
   totalVal = 0;
   inputNumVal = "0";
   beforeVal = "";
