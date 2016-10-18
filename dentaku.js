@@ -109,8 +109,7 @@ function clearAll() {
   /* 変数を初期値に戻して表示を初期化 */
   totalVal = 0;
   inputNumVal = "0";
-  beforeVal = "";
-  operator = "";
+  beforeVal = operator = "";
 
   document.getElementById("output").innerText = "0";
   document.getElementById("type").innerText = "";
