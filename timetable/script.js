@@ -2,10 +2,10 @@ function showClock1() {
 
 
     // Create time object
-    var nowTime: Date = new Date();
+    var nowTime = new Date();
 
     // Get now time
-    var weekDayList: string[] = [ "日", "月", "火", "水", "木", "金", "土" ];
+    var weekDayList = [ "日", "月", "火", "水", "木", "金", "土" ];
     var now = {
         Hour:   nowTime.getHours(),
         Min:    nowTime.getMinutes(),
